@@ -171,14 +171,5 @@ main .card-wrapper{
 
 /* MEDIA QUERIES */
 @media (max-width:850px){
-    nav .right{
-        display: none;
-    }
-    .hamb-menu{
-        display: block;
-    }
-    nav{
-        display: none;
-        gap: 0;
-    }
+
 }
