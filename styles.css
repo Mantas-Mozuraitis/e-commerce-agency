@@ -5,6 +5,11 @@
     --color_four:#d9dcde;
     --color_five:#ebede9;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 html{
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
@@ -12,8 +17,6 @@ html{
 }
 body{
     background-color: var(--color_five);
-    margin: 0;
-    padding: 0;
     min-height: 100svh;
     max-width: 100svw;
 }
@@ -21,101 +24,88 @@ body{
 /* NAVIGATION */
 nav{
     position: sticky;
-    top: 0;
+    padding: 0.5rem 2rem;
     background-color: var(--color_three);
-    padding: 0.5% 0;
-
+}
+.nav-bar-wrapper{
+    min-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: solid 0.5px #272836;
 }
-nav > * a{
+.nav-bar-wrapper .links{
+    display: flex;
+    gap: 2rem;
+}
+.nav-bar-wrapper a, .dropdown_menu a{
     text-decoration: none;
     color: var(--color_one);
     font-size: 1.2rem;
-
     transition: color 0.2s ease-in-out;
 }
-nav > * a:hover{
+.nav-bar-wrapper a:hover, .dropdown_menu a:hover{
     color: var(--color_two);
 }
-.left, .right{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-.left img{
+.moz-link img{
     width: auto;
     height: 3rem;
     border-radius: 50%;
     background-color: #2F3242;
 }
-.left a:nth-child(1){
+.moz-link{
     display: flex;
     align-items: center;
+    align-self: flex-start;
     gap: 0.25rem;
 }
 .logo-text{
     font-weight: bold;
 }
-.right > * i{
-    font-size: 2rem;
+.nav-bar-wrapper li, .dropdown_menu li{
+    list-style-type: none;
+}
+.social-links a{
+    font-size: 1.8rem;
     color: var(--color_one);
     margin: 0;
+    transition: color 0.2s ease-in-out;
 }
-/* HAMBURGER CHECKBOX */
-.hamb-menu{
-    display: none;
-    padding: 1.5rem 1rem 1rem 0;
-}
-.hamb{
+.nav-bar-wrapper .toggle_btn{
+    color: var(--color_one);
+    font-size: 1.8rem;
     cursor: pointer;
-    float: right;
-}
-.hamb-line {
-    background: var(--color-four);
-    display: block;
-    height: 3px;
-    position: relative;
-    width: 1.5rem;
-
-} 
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--color-four);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 8px;
-    width: 1rem;
-}
-.hamb-line::after{
-    top: -8px;
-    width: 2rem;
-}
-.side-menu {
     display: none;
 }
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position:absolute;
+    right: 2rem;
+    left: 2rem;
+    top: 80px;
+    height: 0;
+    width: unset;
+    background-color: #2F3242;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-    width: 2rem;
+.open{
+    min-height: 325px;
 }
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-    width: 2rem;
+.dropdown_menu > *{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .social-links{
+    padding-top: 2.5rem;
 }
 
+/* ############################################################### HEADER SECTION END ########### */
 
 /* HEADER-HERO */
 header{
@@ -170,6 +160,71 @@ main .card-wrapper{
 }
 
 /* MEDIA QUERIES */
-@media (max-width:850px){
+@media (min-width:850px) and (max-width:1150px){
+    header img{
+        width: auto;
+        height: 12rem;
+    }
 
+    main{
+        padding: 3rem 0;
+        gap: 2.5rem;
+    }
+    main .card-wrapper{
+        max-width: 30%;
+    }
+    .card-wrapper img{
+        height: 3rem;
+    }
 }
+
+
+@media (max-width:850px){
+    nav{
+        padding: 0.5rem 0.5rem;
+    }
+    .nav-bar-wrapper{
+        justify-content: space-between;
+    }
+    .nav-bar-wrapper .links,
+    .nav-bar-wrapper .social-links{
+        display: none;
+    }
+    .nav-bar-wrapper .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    
+
+
+    header img{
+        width: auto;
+        height: 6rem;
+    }
+    header h1{
+        font-size:1.2rem
+    }
+    header a{
+        font-size: 1rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    main{
+        padding: 2rem 0;
+        gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+    }
+    main .card-wrapper{
+        max-width: 80%;
+    }
+    .card-wrapper img{
+        height: 3rem;
+    }
+    .card-wrapper h2, .card-wrapper p{
+        font-size: smaller;
+    }
+}
+
