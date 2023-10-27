@@ -17,19 +17,21 @@ html{
 }
 body{
     background-color: var(--color_five);
-    min-height: 100svh;
-    max-width: 100svw;
+    min-height: 100dvh;
+    max-width: 100dvw;
 }
 
 /* NAVIGATION */
 nav{
     position: sticky;
+    top: 0;
+    min-width: 100%;
     padding: 0.5rem 2rem;
     background-color: var(--color_three);
+    border-bottom: #2F3242 solid 1px;
 }
 .nav-bar-wrapper{
-    min-width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -82,18 +84,20 @@ nav{
 .dropdown_menu{
     display: none;
     position:absolute;
-    right: 2rem;
-    left: 2rem;
-    top: 80px;
+    right: 0rem;
+    left: 0rem;
+    top: 65px;
     height: 0;
     width: unset;
     background-color: #2F3242;
-    border-radius: 5px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.dropdown_menu li:nth-child(1) a{
+    padding-top: 1rem;
+}
 .open{
-    min-height: 325px;
+    height: 330px;
 }
 .dropdown_menu > *{
     padding: 0.5rem;
@@ -114,7 +118,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 0rem;
+    gap: 3rem;
 
     background-color: var(--color_three);
     color: var(--color_one);
@@ -153,6 +157,9 @@ main{
 }
 main .card-wrapper{
     max-width: 15%;
+}
+main .card-wrapper h2{
+    padding:0 0 1rem 0;
 }
 .card-wrapper img{
     width: auto;
@@ -198,7 +205,9 @@ main .card-wrapper{
     }
     
 
-
+    header{
+       gap: 1.4rem;
+    }
     header img{
         width: auto;
         height: 6rem;
