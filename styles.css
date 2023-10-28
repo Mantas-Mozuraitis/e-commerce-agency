@@ -17,16 +17,17 @@ html{
 }
 body{
     background-color: var(--color_five);
-    min-height: 100dvh;
-    max-width: 100dvw;
+    min-height: 100svh;
+    max-width: 100svw;
 }
 
 /* NAVIGATION */
 nav{
+    z-index: 1;
     position: sticky;
     top: 0;
-    min-width: 100%;
-    padding: 0.5rem 2rem;
+    max-width: 100%;
+    padding: 0.5rem 0;
     background-color: var(--color_three);
     border-bottom: #2F3242 solid 1px;
 }
@@ -127,7 +128,7 @@ header{
 }
 header img{
     width: auto;
-    height: 18rem;
+    height: 17rem;
 }
 header h1{
     font-weight: normal;
@@ -156,7 +157,7 @@ main{
     gap: 5rem;
 }
 main .card-wrapper{
-    max-width: 15%;
+    max-width: 20%;
 }
 main .card-wrapper h2{
     padding:0 0 1rem 0;
@@ -164,6 +165,69 @@ main .card-wrapper h2{
 .card-wrapper img{
     width: auto;
     height: 5rem;
+}
+/* ABOUT US MAIN SECTION */
+.about_us_main{
+    gap: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 20%;
+}
+.about_us_main hr{
+    border: solid 1px var(--color_one);
+    width: 40%;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+.about_us_main h2{
+    align-self: flex-start;
+}
+.about_us_main p{
+    padding-bottom: 4rem;
+}
+
+/* SERVICES MAIN SECTION */
+.service_main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+    margin:0rem 20%;
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color_three);
+    min-height: 12rem;
+    gap: 1rem;
+    padding-top: 1rem;
+    background-color: var(--color_one);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.service-card:hover{
+    background-color: #82b5bf;
+}
+.service-desc{
+    visibility: collapse;
+    opacity: 0;
+    height: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color_three);
+    color: var(--color_one);
+    padding: 1.5rem;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+.display-service-desc{  
+    height: auto;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* MEDIA QUERIES */
@@ -234,6 +298,26 @@ main .card-wrapper h2{
     }
     .card-wrapper h2, .card-wrapper p{
         font-size: smaller;
+    }
+    /* ABOUT US MAIN SECTION */
+    .about_us_main{
+        margin: 0;
+        max-width: 80%;
+        font-size: smaller;
+    }
+    /* SERVICES MAIN SECTION */
+    .service_main{
+        margin: 0;
+        font-size: smaller;
+    }
+    .service-card{
+        min-height: 6rem;
+    }
+    .service-desc{
+        visibility: visible;
+        opacity: 0.7;
+        height: auto;
+        z-index: 0;
     }
 }
 
