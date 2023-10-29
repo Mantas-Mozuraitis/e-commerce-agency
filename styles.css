@@ -17,8 +17,8 @@ html{
 }
 body{
     background-color: var(--color_five);
-    min-height: 100svh;
-    max-width: 100svw;
+    min-height: 100dvh;
+    max-width: 100dvw;
 }
 
 /* NAVIGATION */
@@ -174,16 +174,16 @@ main .card-wrapper h2{
     align-items: center;
     margin:2rem 20%;
 }
-.about_us_main hr{
+.about_us_main hr, .package_main hr{
     border: solid 1px var(--color_one);
     width: 40%;
     margin-bottom: 1rem;
     align-self: flex-start;
 }
-.about_us_main h2{
+.about_us_main h2,.package_main h1{
     align-self: flex-start;
 }
-.about_us_main p{
+.about_us_main p, .package_main p:nth-child(3){
     padding-bottom: 4rem;
 }
 
@@ -230,6 +230,51 @@ main .card-wrapper h2{
     visibility: visible;
 }
 
+/* PACKAGE MAIN SECTION */
+.package_main{
+    display: flex;
+    flex-direction: column;
+    margin:2rem 20%;
+    justify-content: center;
+    align-items: center;
+}
+.package-card-wrapper{
+    display: grid;
+    justify-content: center;
+    grid-template: auto/1fr 1fr;
+    gap: 1rem;
+}
+.package-card{
+    background-color: var(--color_one);
+    padding: 1.5rem;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.package-card ul{
+    align-self: left;
+    padding-left: 1.5rem;
+    flex: 1;
+}
+.package-card a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--color_three);
+    font-size: 1.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    border: solid var(--color_three) 2px;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+
+    display: flex;
+    justify-content: space-between;
+}
 /* MEDIA QUERIES */
 @media (min-width:850px) and (max-width:1150px){
     header img{
@@ -247,6 +292,7 @@ main .card-wrapper h2{
     .card-wrapper img{
         height: 3rem;
     }
+
 }
 
 
@@ -318,6 +364,17 @@ main .card-wrapper h2{
         opacity: 0.7;
         height: auto;
         z-index: 0;
+    }
+    /* PACKAGES MAIN */
+    .package_main{
+        margin: 1rem 5%;
+        font-size: smaller;
+    }
+    .package-card-wrapper{
+        grid-template: auto/auto;
+    }
+    .price p{
+        font-size: 1rem;
     }
 }
 
