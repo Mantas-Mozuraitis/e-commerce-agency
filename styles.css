@@ -4,6 +4,8 @@
     --color_three:#1b1c26;
     --color_four:#d9dcde;
     --color_five:#ebede9;
+
+    --color_placeholder:#028399;
 }
 *{
     box-sizing: border-box;
@@ -165,14 +167,14 @@ main .card-wrapper h2{
     height: 5rem;
 }
 /* ABOUT US MAIN SECTION */
-.about_us_main, .testimonials_main{
+.about_us_main, .testimonials_main, .contactus_main{
     gap: 0rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin:2rem 20%;
 }
-.about_us_main hr, .package_main hr, .testimonials_main hr{
+hr{
     border: solid 1px var(--color_one);
     width: 100%;
     margin-bottom: 1rem;
@@ -279,10 +281,6 @@ main .card-wrapper h2{
 
 /* TESTIMONIALS MAIN SECTION */
 .testimonial-wrapper{
-    border-left: solid var(--color_one) 2px;
-    border-bottom: solid var(--color_one) 2px;
-    border-top: solid var(--color_one) 2px;
-    padding-left: 0.5rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -291,6 +289,7 @@ main .card-wrapper h2{
 .testimonial-wrapper a{
     text-decoration: none;
     color: var(--color_three);
+    border-bottom: solid var(--color_two) 2px;
 }
 .testimonials_main p:nth-child(3){
     padding: 0 0 2rem 0;
@@ -311,6 +310,87 @@ main .card-wrapper h2{
 .testimonial-review>h3{
     padding-top: 1rem;
 }
+
+/* CONTACT US MAIN SECTION */
+/* Form page */
+form{
+    max-width: 100%;
+}
+form ul{
+    list-style: none;
+    margin:1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list-item, #msg{
+    display: flex;
+    
+    background-color:var(--color_one);
+    border: solid var(--color_two) 2px;
+    font-size: 1.3rem;
+}
+.list-item input{
+    flex-grow: 1;
+}
+.list-item i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 2rem;
+    color: var(--color_one);
+    background-color: var(--color_two);
+}
+form li input, form li textarea{
+    color: var(--color_three); 
+}
+form ul .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button{
+    font-size: 1.3rem;
+    color: var(--color_two);
+    width: fit-content;
+    padding: 0.5rem;
+    align-self: center;
+    border: solid 2px var(--color_two);
+    cursor: pointer;
+
+    transition-property: color, background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+button:hover{
+    background-color: var(--color_one);
+}
+.btn-return:hover .a-return{
+    color: #060f1e90;
+}
+textarea{
+    vertical-align: top;
+    height: 8em;
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
+}
+input, textarea{
+    background-color: var(--color_one);
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    outline: none;
+}
+::placeholder, #plan_name{
+    color:var(--color_placeholder);
+}
+
+
 /* MEDIA QUERIES */
 @media (min-width:850px) and (max-width:1150px){
     header img{

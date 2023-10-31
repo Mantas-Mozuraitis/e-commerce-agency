@@ -56,31 +56,44 @@
         </div>
     </nav>
 
-    <!-- HEADER-HERO -->
-    <header>
-        <img src="./assets/images/Mozuweb_hero.png" alt="mozuweb">
-        <h1>Explore Our Full Suite of Services and <br> Elevate Your Business Today</h1>
-        <a href="./services.html">Services</a>
-    </header>
-
     <!-- CONTENT-CARDS -->
     <main>
-        <div class="card-wrapper">
-            <img class="card-image" src="./assets/images/customer-service.png" alt="">
-            <h2 class="card-header">Comprehensive Service</h2>
-            <p class="card-content">We offer a one-stop solution for all online needs, from building and enhancing your digital presence to driving sustainable growth in digital landscape.</p>
-        </div>
+        <div class="contactus_main">
 
-        <div class="card-wrapper">
-            <img class="card-image" src="./assets/images/customer-behavior.png" alt="">
-            <h2 class="card-header">Personalised Approach</h2>
-            <p class="card-content">Every client is unique, with its own set of challenges, goals, and aspirations. We commit to providing a personalized approach that's tailored to your specific needs.</p>
-        </div>
+            <h1>Get in Touch with Us</h1><hr>
+            <p>Have questions or need assistance? We're here to help. Contact us today and let's start a conversation. Whether you're looking for more information, have specific project inquiries, or just want to say hello, we're just a message away. We look forward to hearing from you!</p>
 
-        <div class="card-wrapper">
-            <img class="card-image" src="./assets/images/profit.png" alt="">
-            <h2 class="card-header">Cost-Effective Solutions</h2>
-            <p class="card-content">We aim to deliver high-quality services that fit within your budget and understand that in today's competitive business landscape, efficiency and cost-effectiveness are paramount.</p>
+            <form id="orderForm" action="form-to-email.php" class="hidden" method="post">
+                <input type="hidden" name="_subject" value="mozuweb.com new message!"/>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://mozuweb.com">
+                <ul>
+
+                    <li>
+                        <div class="list-item">
+                            <i class="fa fa-fw fa-user"></i>
+                            <input type="text" id="name" name="user_name" placeholder="Your full name" required/>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="list-item">
+                            <i class="fa fa-fw fa-envelope-o"></i>
+                            <input type="email" id="mail" name="user_email" placeholder="Your email address" required/>
+                        </div>
+                    </li>
+
+                    <li>
+                        <textarea id="msg" name="user_message" placeholder="Your message" required></textarea>
+                    </li>
+
+                    <li class="buttons">
+                        <button type="submit">Send</button>
+                    </li>
+                </ul>
+
+            </form>
+
         </div>
     </main>
 </body>
