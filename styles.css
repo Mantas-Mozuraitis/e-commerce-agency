@@ -119,6 +119,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
     gap: 3rem;
 
     background-color: var(--color_three);
@@ -189,45 +190,51 @@ hr{
 
 /* SERVICES MAIN SECTION */
 .service_main{
-    display: flex;
-    flex-direction: column;
     width: 80%;
-    gap: 1rem;
     margin:0rem 20%;
 }
 .service-card{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: var(--color_three);
-    min-height: 12rem;
+    min-height: 15rem;
     gap: 1rem;
     padding-top: 1rem;
-    background-color: var(--color_one);
+    background: var(--color_one);
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
 }
-.service-card:hover{
-    background-color: #82b5bf;
-}
-.service-desc{
-    visibility: collapse;
-    opacity: 0;
-    height: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.service_main .collapsed-content{
+    display: flex;
+    overflow: hidden;
     background-color: var(--color_three);
     color: var(--color_one);
-    padding: 1.5rem;
-    transition: visibility 0s, opacity 0.5s ease-in-out;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 }
-.display-service-desc{  
-    height: auto;
-    opacity: 1;
-    visibility: visible;
+.service_main .collapsed-content p{
+    padding: 0.5rem;
+}
+.service_main .collapsed-content a{
+    text-decoration: none;
+    color: var(--color_three);
+    background-color: var(--color_one);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5rem;
+
+    transition: background-color 0.2s ease-in-out;
+}
+.service_main .collapsed-content a:hover{
+    background-color: #82b5bf;
 }
 
 /* PACKAGE MAIN SECTION */
@@ -397,7 +404,6 @@ input, textarea{
         width: auto;
         height: 12rem;
     }
-
     main{
         padding: 3rem 0;
         gap: 2.5rem;
@@ -447,7 +453,7 @@ input, textarea{
     }
     header a{
         font-size: 1rem;
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.7rem;
     }
 
     main{
@@ -473,17 +479,15 @@ input, textarea{
     }
     /* SERVICES MAIN SECTION */
     .service_main{
+        width: 80%;
+        gap: 0.2rem;
+    }
+    .service_main{
         margin: 0;
         font-size: smaller;
     }
     .service-card{
-        min-height: 6rem;
-    }
-    .service-desc{
-        visibility: visible;
-        opacity: 0.7;
-        height: auto;
-        z-index: 0;
+        min-height: 10rem;
     }
     /* PACKAGES MAIN */
     .package_main{
