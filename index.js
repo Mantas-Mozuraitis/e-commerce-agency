@@ -11,13 +11,6 @@ toggleBtn.on("click", function(){
     :toggleBtnIcon.removeClass("fa fa-fw fa-close").addClass("fa fa-fw fa-bars");
 })
 
-// serviceCard.each(function(index){
-//     $(this).on("click", function(){
-//         $(this).next().css("max-height")
-//         ?$(this).next().css("max-height", "0")
-//         :$(this).next().css("max-height") = $(this).prop("scrollHeight") + "px";
-//     })
-// })
 var i;
 for (i = 0; i < serviceCard.length; i++) {
     serviceCard[i].addEventListener("click", function() {
