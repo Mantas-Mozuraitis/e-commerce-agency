@@ -19,8 +19,8 @@ html{
 }
 body{
     background-color: var(--color_five);
-    min-height: 100dvh;
-    max-width: 100dvw;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
 /* NAVIGATION */
@@ -360,6 +360,7 @@ form li{
 }
 .list-item input{
     flex-grow: 1;
+    overflow: hidden;
 }
 .list-item i{
     display: flex;
@@ -474,7 +475,7 @@ input, textarea{
 
     main{
         padding:0 0 1rem 0;
-        gap: 0rem;
+        gap: 2rem;
         align-items: center;
         flex-direction: column;
     }
@@ -486,6 +487,10 @@ input, textarea{
     }
     .card-wrapper h2, .card-wrapper p{
         font-size: smaller;
+    }
+    /* HOME */
+    .home-main{
+        padding: 1.5rem 0;
     }
     /* ABOUT US MAIN SECTION */
     .about_us_main, .contactus_main{
