@@ -10,7 +10,6 @@ toggleBtn.on("click", function(){
 })
 
 $(".service-card").click(function(){
-    console.log($(this));
-    $(this).next().toggleClass("collapsed-content-active");
+    $(this).find(".collapsed-content").toggleClass("collapsed-content-active");
 })
 
