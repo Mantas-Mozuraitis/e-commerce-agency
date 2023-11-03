@@ -2,8 +2,6 @@ const toggleBtn = $(".toggle_btn");
 const toggleBtnIcon = $(".toggle_btn i");
 const dropDownMenu = $(".dropdown_menu");
 
-const serviceCard = $(".service-card");
-
 toggleBtn.on("click", function(){
     dropDownMenu.toggleClass("open");
     dropDownMenu.hasClass("open")
@@ -11,15 +9,8 @@ toggleBtn.on("click", function(){
     :toggleBtnIcon.removeClass("fa fa-fw fa-close").addClass("fa fa-fw fa-bars");
 })
 
-var i;
-for (i = 0; i < serviceCard.length; i++) {
-    serviceCard[i].addEventListener("click", function() {
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } 
-    });
-  }
+$(".service-card").click(function(){
+    console.log($(this));
+    $(this).next().toggleClass("collapsed-content-active");
+})
 
