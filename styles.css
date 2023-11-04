@@ -531,6 +531,9 @@ input, textarea{
         font-size: smaller;
     }
     /* SERVICES MAIN SECTION */
+    .service-wrapper{
+        padding: 0;
+    }
     .service_main{
         width: 100%;
         padding: 0;
@@ -539,6 +542,7 @@ input, textarea{
     }
     .service-card{
         min-height: 10rem;
+        margin: 0;
     }
     /* PACKAGES MAIN */
     .package_main{
