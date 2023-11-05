@@ -234,8 +234,11 @@ hr{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--color_one);
-    transition: transform 0.1s ease-in-out;
+    transition: box-shadow 0.1s ease-out;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.service-card:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .service-card h2{
     text-align: center;
@@ -245,10 +248,10 @@ hr{
     position: absolute;
     z-index: 1;
     top: 0;
-    max-height: 0%;
+    height: 0%;
     min-width: 100%;
-    align-self: flex-start;
-    justify-self: flex-start;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -258,14 +261,28 @@ hr{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     background-color: var(--color_three);
     background-size:cover;
-    border-radius:10% 10% 50% 50% / 0% 0% 20% 20%;
     transform: scaleY(0);
     transform-origin: top;
-    transition: max-height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .collapsed-content-active{
-    max-height: 100% !important;
+    height: 100% !important;
     transform: scaleY(1) !important;
+}
+.collapsed-content .price-enquire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.collapsed-content .price-enquire h3{
+    color: var(--color_three);
+    background-color: var(--color_one);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5rem;
 }
 .service_main .collapsed-content p{
     padding: 0.5rem;
@@ -543,8 +560,11 @@ input, textarea{
         font-size: smaller;
     }
     .service-card{
-        min-height: 10rem;
+        min-height: 15rem;
         margin: 0;
+    }
+    .service-card:hover{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
     .service-card h2{
         font-size: 2rem;
