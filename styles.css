@@ -510,6 +510,11 @@ input, textarea{
     .card-wrapper img{
         height: 3rem;
     }
+    /* PACKAGES MAIN */
+    .price{
+        font-size: 2.2rem;
+    }
+
     /* TESTIMONIALS MAIN */
     .testimonials-content{
         flex-direction: column;
