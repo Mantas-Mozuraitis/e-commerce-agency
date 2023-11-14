@@ -187,7 +187,7 @@ main .card-wrapper h2{
 .aboutus-header .header-links a{
     font-size: 1rem;
 }
-.about_us_main, .testimonials_main, .contactus_main{
+.about_us_main, .blog_main, .contactus_main{
     gap: 0rem;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +200,7 @@ hr{
     margin-bottom: 1rem;
     align-self: flex-start;
 }
-.about_us_main h2,.package_main h1,.testimonials_main h1{
+.about_us_main h2,.package_main h1,.blog_main h1{
     align-self: flex-start;
 }
 .about_us_main p{
@@ -381,36 +381,37 @@ hr{
     color: var(--color_placeholder);
 }
 
-/* TESTIMONIALS MAIN SECTION */
-.testimonial-wrapper{
-    margin-bottom: 2rem;
+/* BLOG MAIN SECTION */
+.blog_main{
+    display: flex;
+}
+.blog_main .blog-post{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-.testimonial-wrapper a{
+    max-width: 70%;
+    background-color: var(--color_one);
+    border-radius: 10px;
+    cursor: pointer;
     text-decoration: none;
+}
+.blog_main .blog-post img{
+    width: 100%;
+    padding: 0.25rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.blog-post h2{
+    font-size: 2rem;
+}
+.blog-post .post-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: var(--color_three);
-    border-bottom: solid var(--color_two) 2px;
+    padding: 0.5rem;
 }
-.testimonials_main p:nth-child(3){
-    padding: 0 0 2rem 0;
-}
-.testimonials-content{
-    display: flex;
-}
-.testimonials-content img{
-    width: 30rem;
-    height: 20rem;
-    align-self: center;
-    justify-self: center;
-}
-.testimonial-review{
-    display: flex;
-    flex-direction: column;
-}
-.testimonial-review>h3{
-    padding-top: 1rem;
+.post-title i{
+    font-size: 2rem;
 }
 
 /* CONTACT US MAIN SECTION */
@@ -515,10 +516,8 @@ input, textarea{
         font-size: 2.2rem;
     }
 
-    /* TESTIMONIALS MAIN */
-    .testimonials-content{
-        flex-direction: column;
-    }
+    /* BLOG MAIN */
+
 
 }
 
@@ -585,7 +584,7 @@ input, textarea{
         max-width: 90%;
         font-size: smaller;
     }
-    .aboutus_body header, .packages-body header{
+    .aboutus_body header, .packages-body header, .blog-body header, .contact_body header{
         flex-direction: column;
         padding: 5% 5%;
     }
@@ -626,17 +625,25 @@ input, textarea{
     .price{
         font-size: 2.2rem;
     }
-    /* TESTIMONIALS MAIN */
-    .testimonials_main{
-        margin: 1rem 5%;
+    /* BLOG MAIN */
+    .blog_main{
+        margin: 1rem 2%;
+    }
+    .blog_main .blog-post{
+        max-width: 100%;
+    }
+    .blog-post h2{
         font-size: smaller;
     }
-    .testimonials-content img{
-        width: 20rem;
-        height: 12rem;
+    .blog-post .post-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color_three);
+        padding: 0.5rem;
     }
-    .testimonials-content{
-        flex-direction: column;
+    .post-title i{
+        font-size: smaller;
     }
     /* CONTACT US MAIN */
 }

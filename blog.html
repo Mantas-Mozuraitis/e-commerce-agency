@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Mozuweb</title>
 </head>
-<body class="contact_body">
+<body class="blog-body">
 
     <!-- NAVIGATION -->
     <nav>
@@ -57,48 +57,23 @@
     </nav>
 
     <!-- HEADER-HERO -->
-    <header>
+     <header>
         <div class="other-pages-header">
-            <h2>Get in Touch with Us</h2>
-            <p>Have questions or need assistance? We're here to help. Contact us today and let's start a conversation. Whether you're looking for more information, have specific project inquiries, or just want to say hello, we're just a message away. We look forward to hearing from you!</p>
+            <h2>Our Blog page</h2>
+            <p>You will find exclusive content about web development and e-commerce. Tips and tricks to boost your visibility online and general news related to this evergrowing industry.</p>
         </div>
     </header>
 
     <!-- CONTENT-CARDS -->
     <main>
-        <div class="contactus_main">
-            
-            <form id="orderForm" action="form-to-email.php" class="hidden" method="post">
-                <input type="hidden" name="_subject" value="mozuweb.com new message!"/>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://mozuweb.com">
-                <ul>
-
-                    <li>
-                        <div class="list-item">
-                            <i class="fa fa-fw fa-user"></i>
-                            <input type="text" id="name" name="user_name" placeholder="Your full name" required/>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="list-item">
-                            <i class="fa fa-fw fa-envelope-o"></i>
-                            <input type="email" id="mail" name="user_email" placeholder="Your email address" required/>
-                        </div>
-                    </li>
-
-                    <li>
-                        <textarea id="msg" name="user_message" placeholder="Your message" required></textarea>
-                    </li>
-
-                    <li class="buttons">
-                        <button type="submit">Send</button>
-                    </li>
-                </ul>
-
-            </form>
-
+        <div class="blog_main">
+            <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0dGRVVk1wVhhARVGKjj4br2rNKvQQJvizjEEEVS9758pRzRGtn3X1XjAX2Mu9L9J2l&id=61550720116723" target="_blank" class="blog-post">
+                <img src="./assets/images/Lenis - p1.png" alt="Lenis post image">
+                <div class="post-title">
+                    <h2>Website smooth scrolling implementation</h2>
+                    <i class="fa fa-fw fa-facebook"></i>
+                </div>
+            </a>
         </div>
     </main>
 </body>
