@@ -30,6 +30,12 @@ body{
     gap: 1rem;
     padding: 0 20%;
 }
+.advert{
+    background-color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 /* NAVIGATION */
 nav{
@@ -738,6 +744,12 @@ input, textarea{
     .contactus-info{
         width: 100%;
         gap: 2rem;
+    }
+    .advert{
+        background-color: orange;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
