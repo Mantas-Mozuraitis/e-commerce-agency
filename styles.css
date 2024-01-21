@@ -187,7 +187,7 @@ main .card-wrapper h2{
 .aboutus-header .header-links a{
     font-size: 1rem;
 }
-.about_us_main, .blog_main, .contactus_main{
+.about_us_main, .contactus_main{
     gap: 0rem;
     flex-direction: column;
     justify-content: center;
@@ -200,13 +200,80 @@ hr{
     margin-bottom: 1rem;
     align-self: flex-start;
 }
-.about_us_main h2,.package_main h1,.blog_main h1{
+.package_main h1,.blog_main h1{
     align-self: flex-start;
 }
-.about_us_main p{
-    padding-bottom: 4rem;
-}
 
+.aboutus_body main{
+    width: 100%;
+}
+.about_us_main{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.who-are-we{
+    background-color: var(--color_one);
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.who-are-we img{
+    width: 100%;
+}
+.who-are-we h2, .meet-team h2{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.we-cont{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.meet-team{
+    gap: 1rem;
+}
+.meet-team h2{
+    background-color: var(--color_one);
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+}
+.team-member-container{
+    display: flex;
+    width: 100%;
+}
+.team-member{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.team-member h3{
+    font-size: 2.5rem;
+}
+.team-member img{
+    width: 90%;
+    border-radius:15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.team-member p{
+    width: 90%;
+    font-size: 1rem;
+    text-align: justify;
+    background-color: var(--color_two);
+    color: var(--color_one);
+    padding: 1rem;
+    border-radius:15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 /* SERVICES MAIN SECTION */
 .service_body{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3cpath d='M94 73L401 380' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M973 114L1333 474' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M960 170L668 -122' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M539 510L903 874' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M411 276L826 691' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M813 447L1002 636' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M62 560L-108 390' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1176 133L1349 306' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1197 243L982 28' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1101 519L1440 858' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1365 427L1126 188' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1276 470L991 185' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M952 174L1158 380' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1095 18L942 -135' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M213 484L361 632' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1320 357L1058 95' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1406 236L1614 444' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M435 435L79 79' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M979 550L1156 727' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M137 223L-78 8' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1017 492L1420 895' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M653 476L986 809' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M501 167L728 394' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1324 301L1141 118' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M746 532L590 376' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1251 162L1668 579' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M727 392L983 648' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M137 444L488 795' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M839 557L531 249' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M505 424L786 705' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M555 500L281 226' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M12 206L345 539' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M505 337L92 -76' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M832 363L645 176' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M258 41L674 457' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M615 370L835 590' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M911 332L1120 541' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1197 412L1586 801' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1002%26quot%3b)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M175 559L-154 230' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1001%26quot%3b)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1001'%3e%3cstop stop-color='rgba(162%2c 209%2c 219%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(162%2c 209%2c 219%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='100%25' y2='100%25' id='SvgjsLinearGradient1002'%3e%3cstop stop-color='rgba(162%2c 209%2c 219%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(162%2c 209%2c 219%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
@@ -385,56 +452,36 @@ hr{
     color: var(--color_placeholder);
 }
 
-/* BLOG MAIN SECTION */
-.blog_main{
-    display: flex;
-}
-.blog_main .blog-post{
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    background-color: var(--color_one);
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.blog_main .blog-post img{
-    width: 100%;
-    padding: 0.25rem;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.blog-post h2{
-    font-size: 2rem;
-}
-.blog-post .post-title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--color_three);
-    padding: 0.5rem;
-}
-.post-title i{
-    font-size: 2rem;
-}
-
 /* CONTACT US MAIN SECTION */
 .contactus_main{
-    padding: 1rem 5rem;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     display: flex;
-    align-items: center;
     flex-direction: row;
     gap: 1rem;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 .contactus-info{
+    background-color: var(--color_one);
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+.contactus-info > * {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+.contactus-info h2{
+    font-size: 2rem;
 }
 /* Form page */
+#orderForm{
+    padding: 1rem;
+}
 form{
     width: 100%;
 }
@@ -478,8 +525,8 @@ form ul .buttons{
     flex-direction: row;
     justify-content: space-between;
 }
-#email-btn{
-    align-self: flex-end;
+.email-btn{
+    align-self: flex-end !important;
 }
 button{
     font-size: 1.3rem;
@@ -574,7 +621,8 @@ input, textarea{
         height: 6rem;
     }
     header h1{
-        font-size:1.2rem
+        font-size:1.2rem;
+        margin: 0.5rem;
     }
     header .header-links a{
         font-size: 1rem;
@@ -613,6 +661,19 @@ input, textarea{
     }
     .about_us_main p{
         padding-bottom: 2rem;
+    }
+    .team-member-container{
+        flex-direction: column;
+    }
+    .team-member img{
+        width: 100%;
+    }
+    .team-member p{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .we-cont{
+        font-size: 1.2rem;
     }
     /* SERVICES MAIN SECTION */
     .service-wrapper{
@@ -671,6 +732,12 @@ input, textarea{
     /* CONTACT US MAIN */
     .contactus_main{
         flex-direction: column;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    .contactus-info{
+        width: 100%;
+        gap: 2rem;
     }
 }
 
