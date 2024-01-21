@@ -337,12 +337,16 @@ hr{
     text-align: center;
     padding: 0 1rem 1rem 1rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 .package-card .list{
     align-self: center;
     padding: 0.5rem;
     flex: 1;
     list-style-type: none;
+}
+.list li{
+    font-size: 1.2rem;
 }
 .package-card a{
     align-self:center;
